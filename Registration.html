@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lotus for Soul</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="RegistrationStyle.css">
+
+</head>
+<body>
+
+<div class="header">
+  <img width="100" height="100" src="file:///C:/Users/HP/OneDrive/Pictures/Screenshots/Lotus-removebg-preview.png">
+  <h2>Registration Form</h2>
+</div>
+
+<div class="header3">
+    <center><h3>I am a Lotus's member</h3></div></center>
+</div>
+<div class="row">
+    <div class="column side1">
+        <button class="button" onclick="window.open('Homepage.html', '_self')">
+        <center><img width="40" src="file:///C:/Users/HP/OneDrive/Pictures/Screenshots/kisspng-computer-icons-clip-art-home-icon-5ae9593b8a8015.4280319615252421715673.png"></center></button><br>
+        <button class="button" onclick="window.open('Workshop1.html', '_self')">Lotus Quotes</button><br>
+        <button class="button" onclick="window.open('Workshop2.html', '_self')">Lotus Poems</button><br>
+        <button class="button" onclick="window.open('Image Gallery.html', '_self')">Lotus Images </button><br>
+    </div>
+    <div class="column middle">
+        <body>
+            First Name: <input type="text" id="myInput"><br><br>
+            Last Name: <input type="text" id="myInput"><br><br>
+            Date of Birth: <input type="text" id="myInput"><br><br>
+            Email: <input type="text" id="myInput"><br><br>
+            Password: <input type="text" id="myInput"><br><br>
+            Confirm Password: <input type="text" id="myInput"><br><br>
+            <button type="button" onclick="getInputValue();">Register</button> 
+            
+            <script>
+               function getInputValue(){
+                    //Selecting the input element and get its value 
+                    var inputVal = document.getElementById("myInput").value;
+                    
+                    //Displaying the value
+                    alert("You have successfully registered");
+                } 
+            </script>
+        </body>
+        
+    </div>
+    <div class="column side2">
+    </div>
+    
+<div class="footer">
+  <p>
+    <img width="100" height="100" src="file:///C:/Users/HP/OneDrive/Pictures/Screenshots/Lotus-removebg-preview.png"> 
+  </p>
+
+</div>
+
+</body>
+</html>
