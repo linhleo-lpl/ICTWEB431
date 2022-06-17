@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Workshops</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="prjstyle.css">
+
+</head>
+<body>
+
+<div class="header">
+  <h2>Header</h2>
+</div>
+<form id="frm1">
+   <label> First name </label>: <input type="text" size="15" id="fn"><br>
+    Last name: <input type="text" size="15" id="ln"><br>
+    Username: <input type="text" size="15" id="un"><br>
+    Email address: <input type="text" id="ea"><br>
+    Password: <lable><input type="password" id="pw"/></lable><br>
+    Confirm Password: <lable><input type="password" id="cpw"/></lable><br>
+    Gender: <label>
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender" > Female   
+<input type="radio" value="Other" name="gender" > Other  
+</label><br>
+    Address: <br>
+    <textarea cols="80" rows="5" value="address" id="ad">  
+    </textarea> <br>
+    Phone number: <label>   
+<input type="text" name="country code"  value="+61" size="2" id="cc"/>   
+<input type="text" name="phone" size="10" id="pn" /> <br> <br> 
+
+</label>
+    <button type="button" onclick="getInputValue();">Confirm</button>
+    <input type="button" onclick="resetForm()" value="Reset">
+    </form>
+
+    <P id="displayfn"></P> 
+    <P id="displayln"></P>
+    <P id="displayun"></P>
+    <P id="displayea"></P>
+    <P id="displayad"></P>
+    <P id="displaypn"></P>
+<script>  
+      function getInputValue(){
+           //Selecting the input element and get its value 
+           var fn = document.getElementById("fn").value;
+           var ln = document.getElementById("ln").value;
+           var pw = document.getElementById("pw").value;
+           var cpw = document.getElementById("cpw").value;
+           var un = document.getElementById("un").value;
+           var ea = document.getElementById("ea").value;
+           var ad = document.getElementById("ad").value;
+           var cc = document.getElementById("cc").value;
+           var pn = document.getElementById("pn").value;
+
+           if (fn == 0 || ln == 0 || pw == 0 || cpw == 0 || ad == 0 || pn == 0 ) {
+            document.getElementById("displayfn").innerText = "error msg";
+            //break;
+          }
+             else if (pw != cpw) {
+                document.getElementById("displayfn").innerText = "password error";
+                document.getElementById("pw").value="";
+                document.getElementById("cpw").value="";
+                //break;
+              }
+              else {
+                document.getElementById("displayfn").innerText = "The details you entered were:" + '\n' + '\n' + "First Name: " + fn;
+                document.getElementById("displayln").innerText = "Last Name: " + ln;
+                document.getElementById("displayun").innerText= "User Name: " + un;
+                document.getElementById("displayea").innerText= "Email Address: " + ea;
+                document.getElementById("displayad").innerText= "Address: " + ad;
+                document.getElementById("displaypn").innerText= "Phone Number: " + cc + " " + pn;
+
+                //Displaying the value
+                //alert("What you entered was: " + inputVal);
+              }
+       }   
+
+</script>
+
+    <script>
+      function resetForm() {
+          document.getElementById("frm1").reset();
+    
+      }
+</script>
+</body>
+</html>
