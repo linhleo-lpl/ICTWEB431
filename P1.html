@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Healthy Dinner For The Week</h1>
+
+<h2 id="demo"></h2>
+<div class="button">
+  <button id="btn1" onclick="callfn1()" display: inline;>
+  Ingredients</button>
+  <button id="btn2" onclick="callfn2()" display: inline;>
+  Instructions</button>
+</div>
+
+
+
+<p id="demo2"></p>
+<script>
+  function callfn1() {
+let day;
+/*get today's day of the week and show text based on that day*/
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    document.getElementById("demo").innerHTML = "Dinner for Sunday night<br/>"+"Bacon, Egg And Brussels Cabonara";
+    document.getElementById("demo2").innerHTML = 
+    "12 slices thick-cut bacon, chopped<br/>" +
+    "2 cups brussels sprouts, stems removed and coarsely chopped<br/>"+
+    "1/2 teaspoon freshly cracked black pepper<br/>"+
+    "4 garlic cloves, minced<br/>"+
+    "1/2 pound bucatini<br/>"+
+    "3 large eggs<br/>"+
+    "1 1/2 cups freshly grated parmesan cheese, plus extra for topping<br/>"+
+    "extra salt + pepper for taste, if needed<br/>";
+    break;
+  case 1:
+    day = "Monday";
+    document.getElementById("demo").innerHTML = "Dinner for Monday night<br/>"+"Slow Cooker Enchilada Soup";
+    document.getElementById("demo2").innerHTML =
+    "1 small yellow onion, diced<br/>"+
+    "2 cloves garlic, minced<br/>"+
+    "3 14 oz cans black beans, rinsed and drained<br/>"+
+    "2 14 oz cans vegetable broth<br/>"+
+    "1 10 oz can Old El Paso mild red enchilada sauce<br/>"+
+    "1 15 oz can diced tomatoes, with juice<br/>"+
+    "1 15 oz can corn, drained<br/>"+
+    "1 4.5 oz can Old El Paso chopped green chiles<br/>"+
+    "2 tablespoons fresh lime juice<br/>"+
+    "1 1/2 teaspoons ground cumin<br/>"+
+    "1 teaspoon chile powder<br/>"+
+    "1 teaspoon salt<br/>"+
+    "1/4 teaspoon black pepper<br/>"+
+    "1/4 cup chopped cilantro<br/>"+
+    "Optional Toppings: avocado shredded cheese, chopped green onions, tortilla chips, sour cream";
+    break;
+  case 2:
+    day = "Tuesday";
+    document.getElementById("demo").innerHTML = "Dinner for Tuesday night<br/>"+"Cheeseburger Macaroni";
+    document.getElementById("demo2").innerHTML = 
+    "8-10 ounces uncooked elbow macaroni (slightly generous ½ pound)<br/>"+
+    "1 pound ground beef (85/15 ratio)<br/>"+
+    "Salt<br/>"+
+    "Black pepper<br/>"+
+    "1 tablespoon dried minced onions<br/>"+
+    "3 ½ tablespoons of softened, unsalted butter, plus 1 tablespoon, melted, divided use<br/>"+
+    "2 cloves garlic, pressed through garlic press<br/>"+
+    "1 ½ ounces all-purpose flour (roughly 5 level tablespoons)<br/>"+
+    "3 cups milk (2%), room temp<br/>"+
+    "2 ¼ cups grated sharp cheddar cheese, divided use<br/>"+
+    "1 teaspoon ground mustard<br/>"+
+    "¼ teaspoon paprika<br/>"+
+    "1 (14.5 ounce) can petite diced tomatoes, drained very well of juice and patted dry<br/>"+
+    "1 cup panko breadcrumbs<br/>"+
+    "1 tablespoon chopped green onion";
+    break;
+  case 3:
+    day = "Wednesday";
+    document.getElementById("demo").innerHTML = "Dinner for Wednesday night<br/>"+"Thai Chicken Flatbread Pizza";
+    document.getElementById("demo2").innerHTML = 
+    "thinly sliced red onion:  you may substitute with green onions if red onions are not your thing.<br/>"+
+    "mozzarella cheese:  use freshly grated cheese for best results.<br/>"+
+    "white bean sprouts:  add a delightful, fresh crunch!  Packaged bean sprouts go bad very quickly so make sure to use them within a couple days.<br/>"+
+    "matchstick carrots: you can slice your own thin carrots or purchase pre-packaged matchstick carrots.<br/>"+
+    "cilantro: adds the fresh, zesty, citrusy kick.  Add it after the chicken comes out of the oven.  Use more or less to taste.<br/>"+
+    "chopped peanuts: add yet another dimension of undeniably delicious texture.<br/>"+
+    "Add your own!  You may also try your own toppings such as shredded cabbage, shredded Brussels sprouts, water chestnuts, pineapple etc.";
+    break;
+  case 4:
+    day = "Thursday";
+    document.getElementById("demo").innerHTML = "Dinner for Thursday night<br/>"+"The Ultimate Winter Bliss Bowls";
+    document.getElementById("demo2").innerHTML = 
+    "For the Roasted Veggies<br/>"+
+    "5–7 carrots<br/>"+
+    "1 head cauliflower<br/>"+
+    "2 tablespoons olive oil<br/>"+
+    "4 teaspoons cumin<br/>"+
+    "salt and pepper to taste<br/>"+
+    "For the Bliss Bowls<br/><br/>"+
+    "8–10 pieces of Simple 5 Ingredient Baked Falafel<br/>"+
+    "2–3 cups spinach<br/>"+
+    "1–2 cups chopped red cabbage<br/>"+
+    "1 jalapeño, cut into slices<br/>"+
+    "1/4 cup crushed pistachios<br/>"+
+    "tahini, lemon juice, honey, and/or olive oil for drizzling";
+    break;
+  case 5:
+    day = "Friday";
+    document.getElementById("demo").innerHTML = "Dinner for Friday night<br/>"+"Beef with Broccoli";
+    document.getElementById("demo2").innerHTML = 
+    "1- 1/4 pound flank or sirloin steak , cut very thin against the grain"+
+    "1/ 2 cup + 2 tablespoons reduced sodium gluten-free Tamari , divided<br/>"+
+    "2- 1/2 tablespoons Bob’s Red Mill Gluten-Free Sweet Rice Flour , divided<br/>"+
+    "3/ 4 cup gluten-free chicken broth<br/>"+
+    "1/ 4 cup brown sugar<br/>"+
+    "1 tablespoon rice vinegar<br/>"+
+    "1 teaspoon sesame oil<br/>"+
+    "3 cloves garlic , minced<br/>"+
+    "1/ 2 teaspoon ground ginger<br/>"+
+    "1/ 2 teaspoon red chili pepper flakes , or more or less<br/>"+
+    "4 cups broccoli florets<br/>"+
+    "1 red bell pepper , seeded and sliced<br/>"+
+    "1/4 cup water<br/>"+
+    "2 tablespoons grapeseed or vegetable oil , divided<br/>"+
+    "Cooked rice , for serving<br/>"+
+    "Sesame seeds for garnish<br/>"+
+    "Green onion , chopped for garnish<br/>";
+    break;
+  case  6:
+    day = "Saturday";
+    document.getElementById("demo").innerHTML = "Dinner for Saturday night<br/>"+"Cajun Chicken Ingredients";
+    document.getElementById("demo2").innerHTML = 
+    "For this Cajun chicken dinner, you’ll need:<br/><br/>"+
+
+    "Chicken thighs<br/>"+
+    "Yukon Gold potatoes<br/>"+
+    "Olive oil<br/>"+
+    "Bell pepper<br/>"+
+    "Red onion<br/>"+
+    "Fresh parsley<br/>"+
+    "Salt and pepper<br/><br/>"+
+    "And for the homemade cajun seasoning, you’ll need:<br/><br/>"+
+
+    "Paprika<br/>"+
+    "Garlic powder<br/>"+
+    "Salt<br/>"+
+    "Dried oregano<br/>"+
+    "Dried thyme<br/>"+
+    "Onion powder<br/>"+
+    "Black pepper<br/>"+
+    "Cayenne pepper";
+}
+}
+</script>
+<script>
+  function callfn2() {
+    let day;
+  /*get today's day of the week and show text based on that day*/
+  switch (new Date().getDay()) {
+    case 0: 
+      day = "Sunday";
+      document.getElementById("demo").innerHTML = "Dinner for Sunday night<br/>"+"Bacon, Egg And Brussels Cabonara";
+      document.getElementById("demo2").innerHTML =
+"1.Heat a large skillet over medium heat and add the bacon. Cook until totally crispy and the fat is rendered. While the bacon is cooking, boil the water for the bucatini and cook it.<br/><br/>"+
+"2.Remove the bacon from the skillet with a slotted spoon and place it on a paper towel to drain the grease. Use a large spoon to take out half of the bacon grease, placing it in a bowl to use later. Add the brussels sprouts to the skillet with the pepper and stir to coat. Cook for 6 to 8 minutes, stirring occasionally. Stir in the garlic and cook for another minute. Remove the brussels and place them in a bowl off to the side.<br/><br/>"+
+"3.Whisk together the eggs and grated parmesan, try to smooth out all the lumps.<br/><br/>"+
+"4.Add the reserved bacon fat back to the skillet, heating over low heat. Add the bucatini to the skillet and toss it well in the bacon fat – you want it to be throughly coated. Remove the skillet from the heat. Pour in the egg/parmesan mixture and stir quickly and constantly to create a creamy sauce, tossing for 3 to 4 minutes or so. Toss in the cooked bacon and brussels. Top with extra cheese. Taste and season additionally if you’d like. Serve immediately!<br/><br/>"+
+"(Note: I rarely use salt in the recipe because the bacon is so salty. Use your tastes to determine if your dish needs it, since all bacon is different.)";
+      break;
+    case 1:
+      day = "Monday";
+      document.getElementById("demo").innerHTML = "Dinner for Monday night<br/>"+"Slow Cooker Enchilada Soup";
+      document.getElementById("demo2").innerHTML = 
+"1.Add all ingredients, except toppings, to the bowl of a slow cooker. Stir and cook for 3-4 hours on high heat or 6-8 hours on low heat.<br/><br/>"+
+"2.Ladle soup into bowls and garnish with toppings.<br/><br/>"+
+"3.Note-the soup will keep in the refrigerator for up to 5 days. You can freeze the soup in a freezer container for up to 2 months. If you want to add chicken to this recipe, use two chicken breasts. Shred chicken with two forks when it is done cooking.";
+    break;
+    case 2:
+      day = "Tuesday";
+      document.getElementById("demo").innerHTML = "Dinner for Tuesday night<br/>"+"Cheeseburger Macaroni";
+      document.getElementById("demo2").innerHTML = 
+"1.Begin by gathering and prepping all of your ingredients according to the ingredient list above to have ready and organized for use.<br/><br/>"+
+"2.Preheat oven to 400°, and lightly mist a baking dish or casserole dish with a touch of cooking spray.<br/><br/>"+
+"3.Cook your elbow macaroni according to package instructions, then drain and keep warm.<br/><br/>"+
+"4.While the macaroni cooks, place a large saute pan or skillet over medium-high heat, and once hot, crumble in the ground beef, plus a little pinch of salt and pepper, and the dried minced onion, and cook the beef until no longer pink. Drain the meat completely of juices and fat, and set aside for a moment.<br/><br/>"+
+"5.Next, place a medium large pot over medium-low heat, and add the 3 ½ tablespoons of softened butter in along with the garlic. Once melted and aromatic, sprinkle in the flour and stir, and cook this mixture for about 1-2 minutes. Then, pour in the milk, whisking all the while to avoid lumps from forming, and allow the sauce to simmer for about 8-10 minutes or so, or until gently bubbling and thickened. Turn off the heat.<br/><br/>"+
+"6.Add in 1 ¾ cups of grated cheddar cheese, and whisk until melted into the sauce. Then, add in the ground mustard, about ¾ teaspoons of salt, the paprika, and a good pinch of black pepper, and whisk to combine.<br/><br/>"+
+"7.Next, add into this cheese sauce the cooked ground beef, along with the cooked macaroni, the drained diced tomatoes, and the remaining ½ cup of shredded cheddar cheese, and gently fold everything together until well combined. Check the seasoning to see if any additional salt/pepper is needed, then pour or spoon the cheeseburger macaroni mixture into your prepared baking/casserole dish.<br/><br/>"+
+"8.In a small bowl, combine the panko breadcrumbs with the melted butter, and using a fork, toss together. Sprinkle this buttery panko mixture over top of the cheeseburger macaroni, then place the casserole into the oven to bake for about 15-20 minutes. (If you'd like a darker crust, turn the broiler on at the end for a minute or two to crisp the crumbs a bit more.)<br/><br/>"+
+"9.Garnish with green onion, and serve.";
+    break;
+    case 3:
+      day = "Wednesday";
+      document.getElementById("demo").innerHTML = "Dinner for Wednesday night<br/>"+"Thai Chicken Flatbread Pizza";
+      document.getElementById("demo2").innerHTML = 
+"Combine Sauce ingredients.  Start by whisking your peanut sauce ingredients together which is simple mixture of soy sauce, brown sugar, lime juice, ginger, garlic, basil and of course – peanut butter!  We will add the peanut butter at the very end.  This sauce is a variation of the peanut sauce I use in all my Thai peanut dishes and every time I am amazed at how much flavor can come from so simple a sauce – and you will too!<br/><br/>"+
+"Cook chicken: Cook chopped chicken just until no longer pink – it does not need to be cooked though because it will continue to cook in the oven.<br/><br/>"+
+"Combine chicken and sauce:  Add Peanut Sauce (except for peanut butter) to chicken and simmer with chicken for two minutes to infuse the chicken with flavor. Stir in peanut butter until smooth and completely combined.<br/><br/>"+
+"Top pizza:  Spread this peanut chicken sauce onto your pizzas, pile with mozzarella cheese, red onions, carrots, bean sprouts.<br/><br/>"+
+"Bake:  Bake pizza for about 10 minutes until golden bubbly.<br/><br/>"+
+"Garnish.  Garnish Thai Chicken Flatbread Pizza with with cilantro, crushed peanuts and if you are feeling extra flirty and fun, drizzle it with 4 ingredient Coconut Yogurt Crema!  Trust me, you want to feel extra flirty and fun.";
+    break;
+    case 4:
+      day = "Thursday";
+      document.getElementById("demo").innerHTML = "Dinner for Thursday night<br/>"+"The Ultimate Winter Bliss Bowls";
+      document.getElementById("demo2").innerHTML = 
+"Falafel: Make this falafel so you have it all ready to go! It takes about 30 minutes.<br/><br/>"+
+"Roasted Veggies: Preheat the oven to 400 degrees. Peel the carrots and cut into thin strips and place on a roasting pan (a jelly roll pan works well because then the veggies don’t slide off). Chop the cauliflower into small florets and place on a separate roasting pan. Drizzle each pan with oil and sprinkle each pan with cumin, salt, and pepper. Toss around on the pan to combine. Bake for 20-30 minutes – stir occasionally, but not too often otherwise you’ll disrupt the browning process. To get more browning, bake for an additional 10-15 minutes. When the veggies are done, remove from oven and set aside to cool.<br/><br/>"+
+"Bliss Bowl Assembly: Assemble spinach, red cabbage, falafel, carrots, and roasted cauliflower in the bowls. Top with jalapeño and pistachios. Drizzle with tahini, lemon juice, honey, olive oil, and salt and pepper as needed.";
+    break;
+    case 5:
+      day = "Friday";
+      document.getElementById("demo").innerHTML ="Dinner for Friday night<br/>"+"Beef with Broccoli";
+      document.getElementById("demo2").innerHTML = 
+"1.Add steak, 2 tablespoons gluten-free Tamari, and 1 tablespoon Sweet Rice Flour to a large Ziplock bag then seal and squish to evenly coat. Place bag into the refrigerator to marinate for 20 minutes.<br/><br/>"+
+"2.Meanwhile, add remaining 1/2 cup gluten-free Tamari, remaining 1-1/2 tablespoons Sweet Rice Flour, chicken broth, brown sugar, rice vinegar, sesame oil, garlic, ground ginger, and red chili pepper flakes to a bowl then whisk to combine and set aside.<br/><br/>"+
+"3.Heat a large wok or non-stick skillet over high heat then add water and broccoli. Stir fry until broccoli is crisp tender, 2-3 minutes, then remove to a plate and set aside. Repeat the process with the red bell pepper.<br/><br/>"+
+"4.Heat 1 tablespoon grapeseed oil in wok then add 1/2 the marinated beef in one layer. Let sit undisturbed until seared, 30 seconds, then stir fry until just barely cooked through (some pink still showing is ok.) Remove to plate with broccoli then cook remaining beef in remaining 1 Tablespoon oil, and then add to plate.<br/><br/>"+
+"5.Add sauce to wok then simmer until slightly thickened, 2-3 minutes. Add cooked broccoli and beef back into wok then stir to combine. Garnish with sesame seeds and green onion. Serve over cooked rice.";
+    break;
+    case  6:
+      day = "Saturday";
+      document.getElementById("demo").innerHTML = "Dinner for Saturday night<br/>"+"Cajun Chicken Ingredients";
+      document.getElementById("demo2").innerHTML = 
+"1.Preheat oven to 425 degrees F.<br/><br/>"+
+"2.Place chicken on a rimmed baking sheet and drizzle with olive oil. Then, season with cajun seasoning.<br/><br/>"+
+"3.Toss potatoes with olive oil and cajun seasoning as well. Transfer to baking sheet with chicken.<br/><br/>"+
+"4.Roast the cajun chicken and potatoes for 30 minutes. Remove baking tray from oven and add bell pepper and red onion over potatoes and toss.<br/><br/>"+
+"5.Roast for another 10 to 15 minutes. Serve warm sprinkled with parsley.";
+
+  }
+  }
+</script>
+</body>
+</html>
